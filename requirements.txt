@@ -1,5 +1,5 @@
 streamlit
 pandas
 webbrowser
-BytesIO
+io
 requests
