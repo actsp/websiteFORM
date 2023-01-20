@@ -45,3 +45,12 @@ if txtFONE:
 if st.button('Confirmar 👇'):
     webbrowser.open(url,new=new)
 
+st.write(f'''
+    <a target="_self" href="https://www.google.com">
+        <button>
+            Please login via Google
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
