@@ -3,7 +3,6 @@ import webbrowser
 from io import BytesIO
 import requests
 import pandas as pd
-from bokeh.models.widgets import Div
 
 st.set_page_config(
      page_title="Formulário de Cadastro e Interesses Cursos - ACT SP",
@@ -44,11 +43,8 @@ if txtFONE:
     #+'&entry.374343962='  + str(txtPIX)
     #+'&entry.1226253104=' + str(txtPGTO)    
 if st.button('Confirmar 👇'):
-    webbrowser.open(url,new=new)
-
-if st.button('Go to Streamlit'):
-    js = "window.open('https://www.google.com/')"  # New tab or window
-    js = "window.location.href = 'https://www.google.com/'"  # Current tab
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
+    #webbrowser.open(url,new=new)
+    pyautogui.hotkey("ctrl", "t")
+    pyperclip.copy(url)
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.press("enter")
