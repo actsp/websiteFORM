@@ -1,4 +1,6 @@
 streamlit
 pandas
 requests
-bokeh.models.widgets
+pyautogui
+pyperclip
+time
