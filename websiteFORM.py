@@ -46,7 +46,7 @@ if st.button('Confirmar 👇'):
     webbrowser.open(url,new=new)
 
 st.write(f'''
-    <a target="_self" href="https://www.google.com">
+    <a target="_self" href=url>
         <button>
             Please login via Google
         </button>
