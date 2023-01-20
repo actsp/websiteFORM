@@ -24,8 +24,15 @@ url = 'https://docs.google.com/forms/d/e/1FAIpQLScQyVpejEuPYzqCzUR9gF7lnRbz4UNF6
 st.title('Cadastre seu interesse em cursos - ACT SP ')
 st.subheader('Entraremos em contato com você em breve!')
 
-link = '[GitHub](http://github.com)'
-st.markdown(link, unsafe_allow_html=True)
+import streamlit as st
+
+st.markdown("""
+               <style>
+               div.stButton > button:first-child {
+                   background-color: rgb(204, 49, 49);
+               }
+               </style>""", unsafe_allow_html=True)
+
 
 txtNome = st.text_input("Digite seu nome completo 👇")
 if txtNome:
