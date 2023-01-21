@@ -1,5 +1,5 @@
 import streamlit as st
-import webbrowser
+#import webbrowser
 from io import BytesIO
 import requests
 import pandas as pd
@@ -54,7 +54,8 @@ if txtFONE:
     #+'&entry.198265004='  + str(txtOBS)
     #+'&entry.374343962='  + str(txtPIX)
     #+'&entry.1226253104=' + str(txtPGTO)    
-if st.button('Confirmar 👇'):
-    webbrowser.open(url,new=new)
+
+#if st.button('Confirmar 👇'):
+#   webbrowser.open(url,new=new)
 
 st.write("Clique[SALVAR](url)")
