@@ -56,3 +56,5 @@ if txtFONE:
     #+'&entry.1226253104=' + str(txtPGTO)    
 if st.button('Confirmar 👇'):
     webbrowser.open(url,new=new)
+
+st.write("Clique[SALVAR](url)")
